@@ -4,7 +4,13 @@ import Person from './Person/Person';
 // import { render } from '@testing-library/react';
 
 function App() {
-  state 
+  state = {
+    persons: [
+      { name: 'Max', age: 28 },
+      { name: 'Manu', age: 29 },
+      { name: 'Stepanhie', age: 26}
+    ]
+  }
 
   return (
     <div className="App">

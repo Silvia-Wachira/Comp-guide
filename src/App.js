@@ -5,6 +5,14 @@ import Person from './Person/Person';
 
 // function App() {
   class App extends Component {
+    state = {
+      persos: [
+        { name: 'Max', age: 28 },
+        { name: 'Manu', age: 29 },
+        { name: 'Stephanie', age: 26 }
+      ]
+    }
+
     render() {
       return (
         <div>

@@ -8,12 +8,20 @@ import Person from './Person/Person';
       persons: [
         { name: 'Max', age: 28 },
         { name: 'Manu', age: 29 },
-        { name: 'Stephanie', age: 27 }
-      ]
+        { name: 'Stephanie', age: 26 }
+      ],
+      otherState: 'some other value'
     }
 
     switchNameHandler = () => {
-      console.log('Was clicked!');
+     // console.log('Was clicked!');
+    //  this.state.persons[0] = 'Maximillium'
+    this.setState({
+      persons: [
+        { name: 'Max', age: 28 },
+        { name: 'Manu', age: 29 },
+        { name: 'Stephanie', age: 27 }
+      ] })
     }
 
     render() {

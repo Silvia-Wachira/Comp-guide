@@ -18,7 +18,7 @@ import Person from './Person/Person';
     //  this.state.persons[0] = 'Maximillium'
     this.setState({
       persons: [
-        { name: 'Max', age: 28 },
+        { name: 'Maximillian', age: 28 },
         { name: 'Manu', age: 29 },
         { name: 'Stephanie', age: 27 }
       ] })

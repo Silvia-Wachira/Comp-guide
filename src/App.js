@@ -44,7 +44,7 @@ import Person from './Person/Person';
         cursor: 'pointer'
       }
       return (
-        <div>
+        <div> 
           <h1> Hi, I'm a React App </h1>
           <p>This is really working!</p>
           <button

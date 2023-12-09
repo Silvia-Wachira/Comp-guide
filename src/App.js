@@ -41,7 +41,7 @@ import Person from './Person/Person';
         font: 'inherit',
         border: '1px solid blue',
         padding: '8px',
-        cursor: 'pointer'
+        cursor: 'pointer' 
       }
       return (
         <div> 

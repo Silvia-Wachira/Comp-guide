@@ -50,7 +50,8 @@ import Person from './Person/Person';
           <button
           style={style}
            onClick={() => this.switchNameHandler('Maximillian!')}>Switch Name</button>
-          <Person
+        <div>
+        <Person
            name={this.state.persons[0].name} 
            age={this.state.persons[0].age} /> 
           <Person 
@@ -62,6 +63,9 @@ import Person from './Person/Person';
           <Person
            name={this.state.persons[2].name} 
            age={this.state.persons[2].age} />
+        </div>
+
+ 
         </div>
       );
     }

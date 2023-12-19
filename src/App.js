@@ -10,7 +10,8 @@ import Person from './Person/Person';
         { name: 'Manu', age: 29 },
         { name: 'Stephanie', age: 26 }
       ],
-      otherState: 'some other value'
+      otherState: 'some other value',
+      showPersons: false
     }
 
     switchNameHandler = (newName) => {
@@ -34,6 +35,10 @@ import Person from './Person/Person';
       } )
     }
 
+    togglePersonsHandler = () => {
+
+    } 
+
     render() {
 
       const style = {
@@ -49,7 +54,7 @@ import Person from './Person/Person';
           <p>This is really working!</p>
           <button
           style={style}
-           onClick={() => this.switchNameHandler('Maximillian!')}>Switch Name</button>
+           onClick={ this.togglePersonsHandler}>Switch Name</button>
         <div>
         <Person
            name={this.state.persons[0].name} 

@@ -36,7 +36,7 @@ import Person from './Person/Person';
     }
 
     togglePersonsHandler = () => {
-
+      const doesShow = this.state.showPersons
     } 
 
     render() {

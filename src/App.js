@@ -55,21 +55,23 @@ import Person from './Person/Person';
           <button
           style={style}
            onClick={ this.togglePersonsHandler}>Switch Name</button>
+        {
+          this.state.showPersons === true ?
         <div>
-        <Person
-           name={this.state.persons[0].name} 
-           age={this.state.persons[0].age} /> 
-          <Person 
-          name={this.state.persons[1].name}
-           age={this.state.persons[1].age}
-           click={this.switchNameHandler.bind(this, 'Max!')}
-           changed={this.nameChangedHandler} > My Hobbies: Racing </Person>
-           
           <Person
-           name={this.state.persons[2].name} 
-           age={this.state.persons[2].age} />
-        </div>
-
+            name={this.state.persons[0].name} 
+            age={this.state.persons[0].age} /> 
+            <Person 
+            name={this.state.persons[1].name}
+            age={this.state.persons[1].age}
+            click={this.switchNameHandler.bind(this, 'Max!')}
+            changed={this.nameChangedHandler} > My Hobbies: Racing </Person>
+            
+            <Person
+            name={this.state.persons[2].name} 
+            age={this.state.persons[2].age} />
+        </div> : null
+        }
  
         </div>
       );

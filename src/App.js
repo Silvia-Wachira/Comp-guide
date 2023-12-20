@@ -14,15 +14,8 @@ import Person from './Person/Person';
       showPersons: false
     }
 
-    switchNameHandler = (newName) => {
-     // console.log('Was clicked!');
-    //  this.state.persons[0] = 'Maximillium'
-    this.setState({
-      persons: [
-        { name: newName, age: 28 },
-        { name: 'Manu', age: 29 },
-        { name: 'Stephanie', age: 27 }
-      ] })
+    deletePersonHandler = (personIndex) => {
+      
     }
 
     nameChangedHandler = (event) => {
@@ -55,8 +48,9 @@ import Person from './Person/Person';
       if (this.state.showPersons) {
         persons = (
           <div>
-            {this.state.persons.map(person => {
+            {this.state.persons.map((person, index) => {
               return <Person
+              click={this.deletePersonHandler(index)}
                name={person.name}
                age={person.age} />
             })}

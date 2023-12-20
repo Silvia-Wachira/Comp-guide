@@ -14,10 +14,6 @@ import Person from './Person/Person';
       showPersons: false
     }
 
-    deletePersonHandler = (personIndex) => {
-      
-    }
-
     nameChangedHandler = (event) => {
       this.setState( {
         persons: [
@@ -26,6 +22,12 @@ import Person from './Person/Person';
           { name: 'Stephanie', age: 26 }
         ]
       } )
+    }
+
+    deletePersonHandler = (personIndex) => {
+      const persons = this.state.persons.slice();
+      persons.splice(personIndex, 1);
+      this.setState({persons: persons})
     }
 
     togglePersonsHandler = () => {
@@ -50,7 +52,7 @@ import Person from './Person/Person';
           <div>
             {this.state.persons.map((person, index) => {
               return <Person
-              click={this.deletePersonHandler(index)}
+              click={() => this.deletePersonHandler(index)}
                name={person.name}
                age={person.age} />
             })}

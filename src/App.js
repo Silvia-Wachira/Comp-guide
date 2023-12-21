@@ -45,7 +45,7 @@ import Person from './Person/Person';
         cursor: 'pointer' 
       }
 
-      let persons = null;
+      let persons = null; 
 
       if (this.state.showPersons) {
         persons = (
@@ -58,7 +58,7 @@ import Person from './Person/Person';
                key={person.index} />
             })}
           </div>
-        );
+        );  
       }
 
       return (

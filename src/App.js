@@ -71,7 +71,7 @@ import Person from './Person/Person';
        
         {persons}
         </div>
-      );
+      ); 
     } 
   }
   // return React.createElement('div', {className: 'App'}, React.createElement('h1'), null, 'Does this work now')
